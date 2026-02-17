@@ -116,17 +116,18 @@ async function extractTranscriptWithAutoClick() {
     }
   }
   
-  // Extract text without timestamps and make it continuous
+  // Extract text with timestamps
   let plainText = '';
-  
+
   segments.forEach((segment, index) => {
+    const timestamp = segment.querySelector('.segment-timestamp')?.textContent?.trim() || '';
     const text = segment.querySelector('.segment-text')?.textContent?.trim();
-    
+
     if (text) {
       if (index > 0) {
-        plainText += ' ';
+        plainText += '\n';
       }
-      plainText += text;
+      plainText += `[${timestamp}] ${text}`;
     }
   });
   
