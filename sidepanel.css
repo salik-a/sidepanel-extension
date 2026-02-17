@@ -1,0 +1,90 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+#status-bar {
+  padding: 8px 12px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+#youtube-mode {
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+#transcript-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#transcript-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0;
+}
+
+#transcript-title {
+  flex: 1;
+  font-size: 12px;
+  color: #aaa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#transcript-header button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+#copy-btn {
+  background: #333;
+  color: #fff;
+}
+
+#open-chatgpt-btn {
+  background: #10a37f;
+  color: #fff;
+}
+
+#transcript-text {
+  flex: 1;
+  margin: 0;
+  padding: 12px;
+  overflow-y: auto;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #ddd;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+iframe {
+  width: 100%;
+  flex: 1;
+  border: none;
+  display: block;
+}
