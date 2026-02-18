@@ -1,5 +1,4 @@
-const text = "Yüklediğim video transcriptini, timestamp’leri koruyarak, sadece metni doğal, akıcı ve bağlama uygun profesyonel bir Türkçeyle çevirmeni istiyorum. Transcript çok uzunsa parça parça çevirebilirsin. Sonraki parçaları sormadan direkt çevirebilirsin.";
-
+const text = "Yüklediğim video transcriptini, timestamp’leri belirli aralıklarla koruyarak ama tüm metni doğal, akıcı ve bağlama uygun profesyonel bir Türkçeyle çevirmeni istiyorum.";
 // Listen for messages from side panel
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === 'extractTranscript') {
