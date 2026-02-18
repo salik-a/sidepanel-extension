@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Hızlı Yan Panel",
+  "name": "Video Transcript to ChatGPT",
   "version": "1.0",
   "description": "YouTube transkriptini ChatGPT'ye otomatik yapıştırır.",
-  "permissions": ["activeTab", "scripting", "sidePanel", "tabs", "storage", "declarativeNetRequestWithHostAccess"],
+  "permissions": ["activeTab", "scripting", "sidePanel", "tabs", "storage", "declarativeNetRequestWithHostAccess", "clipboardWrite"],
   "action": {
     "default_icon": {
       "16": "icon16.png",

@@ -1,7 +1,10 @@
+const text = "Yüklediğim video transcriptini, timestamp’leri koruyarak, sadece metni doğal, akıcı ve bağlama uygun profesyonel bir Türkçeyle çevirmeni istiyorum. Transcript çok uzunsa parça parça çevirebilirsin. Sonraki parçaları sormadan direkt çevirebilirsin.";
+
 // Listen for messages from side panel
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === 'extractTranscript') {
     extractTranscriptWithAutoClick().then(result => {
+      navigator.clipboard.writeText(text)
       sendResponse(result);
     });
     return true; // Keep the message channel open for async response
@@ -27,6 +30,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         a.remove();
         URL.revokeObjectURL(url);
       }
+      navigator.clipboard.writeText(text)
       sendResponse(result);
     });
     return true;
