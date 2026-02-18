@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Video Transcript to ChatGPT",
   "version": "1.0",
-  "description": "YouTube transkriptini ChatGPT'ye otomatik yapıştırır.",
+  "description": "YouTube transkriptini indirir ve ChatGPT'yi yan panelde açar.",
   "permissions": ["activeTab", "scripting", "sidePanel", "tabs", "storage", "declarativeNetRequestWithHostAccess", "clipboardWrite"],
   "action": {
     "default_icon": {
